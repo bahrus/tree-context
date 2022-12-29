@@ -1,5 +1,5 @@
 {
-  "name": "tree-menu",
+  "name": "tree-context",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahrus/tree-menu.git"
+    "url": "git+https://github.com/bahrus/tree-context.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bahrus/tree-menu/issues"
+    "url": "https://github.com/bahrus/tree-context/issues"
   },
-  "homepage": "https://github.com/bahrus/tree-menu#readme"
+  "homepage": "https://github.com/bahrus/tree-context#readme"
 }
