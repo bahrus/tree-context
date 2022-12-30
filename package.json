@@ -6,10 +6,10 @@
   "scripts": {
     "serve": "node node_modules/may-it-serve/serve.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package-check": "package-check",
-    "build-manifest": "node doc.mjs > custom-elements.json"
+    "package-check": "package-check"
   },
   "dependencies": {
+    "be-definitive": "0.0.84",
     "xtal-side-nav": "0.0.106"
   },
   "devDependencies": {
