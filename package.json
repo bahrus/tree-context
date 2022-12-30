@@ -9,8 +9,8 @@
     "package-check": "package-check"
   },
   "dependencies": {
-    "be-definitive": "0.0.84",
-    "xtal-side-nav": "0.0.106"
+    "be-definitive": "0.0.85",
+    "xtal-side-nav": "0.0.107"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "0.6.4",

@@ -4,9 +4,10 @@ export const make = {
         having: {
             config: {
                 propDefaults: {
-                // hydratingTransform:{},
-                // transform:{
-                // },
+                    iam: 'here'
+                    // hydratingTransform:{},
+                    // transform:{
+                    // },
                 },
                 propInfo: {}
             }
