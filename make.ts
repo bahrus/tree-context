@@ -4,15 +4,12 @@ export const make = {
         be: "definitive",
         having: {
             config:{
-                propDefaults: {
-                    iam: 'here'
-                    // hydratingTransform:{},
-                    // transform:{
-                    // },
-                },
-                propInfo:{
-                }
+                propDefaults: {},
+                propInfo:{}
             }
         } as BeDefEUP,
+    },
+    "xtal-side-nav": {
+        be: "open-and-shut"
     }
 };

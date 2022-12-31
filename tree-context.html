@@ -7,7 +7,33 @@
 <tree-context>
     <template shadowroot=open>
         <!--begin--><!--begin-->
-        <xtal-side-nav be-importing=xtal-side-nav/xtal-side-nav.html exportparts="opener, side-nav" be-open-and-shut>
+        <style adopt>
+            .stream-orator-wrapper, xtal-side-nav {
+                display: inherit;
+            }
+            xtal-side-nav:not([open]) button{
+                display: none;
+            }
+            xtal-side-nav:not([open]) input{
+                display: none;
+            }
+            xtal-side-nav::part(opener) {
+                background-color: transparent;
+                background-repeat: no-repeat;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+                outline: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                /* top: 2px; */
+            }
+            xtal-side-nav::part(side-nav){
+                position:absolute;
+            }
+        </style>
+        <xtal-side-nav be-importing=xtal-side-nav/xtal-side-nav.html exportparts="opener, side-nav">
 
             <button part=expand-all class=expand-all aria-label="Expand all">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#CD138F" class="bi bi-arrows-expand" viewBox="0 0 16 16">
@@ -202,37 +228,15 @@
             <input part=search aria-label=Search placeholder="Search" type=search>
 
         </xtal-side-nav>
-        <style adopt>
-            .stream-orator-wrapper, xtal-side-nav {
-                display: inherit;
-            }
-            xtal-side-nav:not([open]) button{
-                display: none;
-            }
-            xtal-side-nav:not([open]) input{
-                display: none;
-            }
-            xtal-side-nav::part(opener) {
-                background-color: transparent;
-                background-repeat: no-repeat;
-                border: none;
-                cursor: pointer;
-                overflow: hidden;
-                outline: none;
-                margin: 0;
-                padding: 0;
-                position: relative;
-                /* top: 2px; */
-            }
-            xtal-side-nav::part(side-nav){
-                position:absolute;
-            }
-        </style>
+
         <be-hive></be-hive>
         <script id=shared-tree-context-make nomodule type=module be-having>
             export const make = ['tree-context/make.js', 'https://esm.run/tree-context@0.0.1/make.js'];
             export const definitive = {
                 impl: ['be-definitive/be-definitive.js', 'https://esm.run/be-definitive@0.0.85']
+            }
+            export const openAndShut = {
+                impl: ['be-open-and-shut/be-open-and-shut.js', 'https://esm.run/be-open-and-shut@0.0.11']
             }
         </script>
         <!--end--><!--end-->
