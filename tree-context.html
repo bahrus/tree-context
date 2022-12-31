@@ -202,6 +202,32 @@
             <input part=search aria-label=Search placeholder="Search" type=search>
 
         </xtal-side-nav>
+        <style adopt>
+            .stream-orator-wrapper, xtal-side-nav {
+                display: inherit;
+            }
+            xtal-side-nav:not([open]) button{
+                display: none;
+            }
+            xtal-side-nav:not([open]) input{
+                display: none;
+            }
+            xtal-side-nav::part(opener) {
+                background-color: transparent;
+                background-repeat: no-repeat;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+                outline: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                /* top: 2px; */
+            }
+            xtal-side-nav::part(side-nav){
+                position:absolute;
+            }
+        </style>
         <be-hive></be-hive>
         <script id=shared-tree-context-make nomodule type=module be-having>
             export const make = ['tree-context/make.js', 'https://esm.run/tree-context@0.0.1/make.js'];
